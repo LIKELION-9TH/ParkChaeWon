@@ -1,0 +1,9 @@
+
+    <form action="{% url 'update' edit_music.id %}" method="POST">
+        {%csrf_token%}
+      가수: 
+      <input type="text" name="title" value="{{edit_music.title}}">
+      노래 제목:
+      <input type="text" name="description" value="{{edit_music.description}}">
+      <input class="btn btn-dark" type="submit" value="수정">
+    </form>

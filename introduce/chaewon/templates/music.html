@@ -3,22 +3,7 @@
 {% load static %}
    
 <!doctype html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
-    <title>Features · Bootstrap v5.0</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
-
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-
+ 
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -36,6 +21,15 @@
       .title{
         margin-top: 10px;
         margin-left:30px;
+      }
+      .cont{
+        text-align:center;
+      }
+      input{
+        border-radius: 3px;
+      }
+      .card{
+        padding-top: 30px;
       }
     </style>
 
@@ -104,7 +98,7 @@
               </li>
               <li class="d-flex align-items-center me-3">
                 <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-               hate you
+               Lovegame
               </li>
               <li class="d-flex align-items-center">
                 <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
@@ -118,6 +112,38 @@
 
   <div class="b-example-divider"></div>
 
+  <hr>
+  <section class="py-1 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">추천</h1>
+        <p class="lead text-muted">좋은 노래를 소개해주세요</p>
+      </div>
+    </div>
+  </section>
+  <div class=cont>
+    <form action="{% url 'create' %}">
+      가수: 
+      <input type="text" name="title">
+      노래 제목:
+      <input type="text" name="description">
+      <input class="btn btn-dark" type="submit" value="추천">
+    </form>
+  </div>
+
+  {% for portfolio in porfolios.all %}
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{portfolio.title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">title</h6>
+      <p class="card-text">{{portfolio.description}}</p>
+      <a href="{% url 'edit' portfolio.id %}" class="card-link text-muted ">수정</a>
+      <a href="{% url 'delete' portfolio.id %}" class="card-link text-muted">삭제</a>
+    </div>
+  </div>
+
+  {% endfor %}
+  <br>
   <hr>
 </main>      
  </body>

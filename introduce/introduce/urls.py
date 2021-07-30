@@ -11,4 +11,8 @@ urlpatterns = [
     path('music/',views.music,name='music'),
     path('photo',views.photo,name='photo'),
     path('place/',views.place,name='place'),
-]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+    path('create/',views.create,name='create'),
+    path('delete/<str:id>',views.delete,name='delete'),
+    path('edit/<str:id>',views.edit,name='edit'),
+    path('update/<str:id>',views.update,name='update'),
+] 
