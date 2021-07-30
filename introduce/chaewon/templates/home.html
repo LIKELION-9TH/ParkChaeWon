@@ -7,11 +7,10 @@
     <style>
         #middle{
             overflow: hidden;
-           
         }
         #left{
             float:left;
-            width: 300px;
+            width: 100px;
             height:100vp;
             margin-right: 50px;
           
@@ -19,17 +18,10 @@
        
         #right{
 
-            float:left; 
-            margin-left:120px;
-            margin-top:50px;
+            float:left;
             text-align: center;
             margin-bottom: 50px;
 
-        }
-        #center{
-            font-size:30px;
-            margin-top: 30px;
-            padding-left: 100px;
         }
        
         #photo{
@@ -55,7 +47,7 @@
         .l{
             width:300px;
             height:300px;
-            background-color: blue;
+            background-color:#6988EC;
             float:left;
             background-color: white;
         }
@@ -79,6 +71,28 @@
       .card-text{
           font-size: 13px;
       }
+      .left{
+        float: left;
+        padding-left:140px;
+        margin:50px;
+    }
+    .right{
+        float: right;
+        
+    }
+    .r-left{
+        float: left;
+        padding-left:140px;
+        margin:50px;
+    }
+    .r-right{
+        float: right;
+        margin-top: 200px;
+        
+    }
+    p{
+        text
+    }
        
     </style>
 </head>
@@ -89,7 +103,10 @@
                 <img src="{% static '프로필.jpg' %}" class="card-img-top" alt="프로필 사진">
                 <div class="card-body">
                 <h5 class="card-title"><b>박채원</b></h5>
-                <p class="card-text"><br>
+                <p class="card-text">
+                    성신여자대학교<br>
+                    융합보안공학과 재학중<br>
+                    1998.02.04<br>
                 </p>
                 
                 <a href="#" class="btn btn-primary">developer</a>
@@ -99,13 +116,20 @@
                 </div>
             </div>
         </div>
-        <p id="center">저를 소개합니다.</p>
-        <div id="right">
-           
-                
-              
-
-        </div> 
+        <div id="right">   
+            <div class="r-left">
+                <img src="{% static '모로코.jpg' %}"  alt="모로코" width="180" height="180" >
+                <img src="{% static '스페인2.jpg' %}"  alt="스페인" width="180" height="180" >
+                <br>
+                <img src="{% static '스페인3.jpg' %}"  alt="스페인: 140x140" width="180" height="180" >
+                <img src="{% static '강문.jpg' %}"  alt="강문해변: 140x140" width="180" height="180" >
+            </div>
+            <div class="r-right">
+                <h3>welcome</h3>
+                안녕하세요. 박채원의 홈페이지 입니다.<br>
+                        저의 취미,노래,사진,장소등을 확인할 수 있는 개인 홈페이지 입니다!
+            </div>
+        </div>
     </div>
 </body>
 

@@ -19,16 +19,13 @@
 <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#7952b3">
+
 
 
     <style>
+      body{
+        font-family: 'Noto Sans KR', sans-serif;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -47,27 +44,7 @@
     
   </head>
   <body>
-    
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+ 
 
 <main>
 
@@ -88,7 +65,7 @@
           <div class="card shadow-sm">
             <img src="{% static '사진3.jpg' %}" height="200" alt="Placeholder: 140x140">
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">책으로 무지개모양을 만들어 놓은게 너무 귀여워서 찍었습니다. 배경화면으로 하기 딱 좋은 사진입니다~</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -105,7 +82,7 @@
                 <img src="{% static '사진8.jpg' %}" height="200" alt="Placeholder: 140x140">
   
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">필름카메라를 사고 처음 찍은 사진니다. 처음이라 초점도 다 나갔지만 추억이 담긴 사진입니다.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -121,7 +98,7 @@
             <div class="card shadow-sm">
                 <img src="{% static '사진.jpg' %}" height="200" alt="Placeholder: 140x140">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">이것도 필름카메라로 찍은 사진입니다. 필름카메라로 찍으니까 더 분위기 있어 보여요..! ((제 생각))</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -140,7 +117,7 @@
             <img src="{% static '사진5.jpg' %}" height="200" alt="Placeholder: 140x140">
 
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">처음으로 초점이 안 나간 필름카메라 사진.. 필름카메라에는 재능이 없는 거 같아요..</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -157,7 +134,7 @@
                 <img src="{% static '사진7.jpg' %}" height="200" alt="Placeholder: 140x140">
   
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">누군가 오리를 열심히 만들어서 나무에 매달아 놓은게 너무 귀여워서 찍었습니다.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -174,7 +151,8 @@
                 <img src="{% static '사진15.jpg' %}" height="200" alt="Placeholder: 140x140">
   
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">해가 진 한강공원 사진입니다. 이 날 친구랑 너무 재미있게 놀아서 기억에 남았습니다!
+                </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -186,15 +164,11 @@
               </div>
               </div>
   </div>
-
+  <
+  <hr>
 </main>
 
-
-
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-      
-  </body>
+</body>
 </html>
 
 {%endblock%}
