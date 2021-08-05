@@ -28,6 +28,11 @@
       input{
         border-radius: 3px;
       }
+      #card-print{
+        margin-left:500px;
+        padding-top: 30px;
+        margin-top: 30px;
+      }
       .card{
         padding-top: 30px;
       }
@@ -39,7 +44,7 @@
     <section class="py-1 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">music</h1>
+            <h1 class="fw-light">Music</h1>
             <p class="lead text-muted">제가 좋아하는 음악들을 소개합니다</p>
           </div>
         </div>
@@ -132,7 +137,7 @@
   </div>
 
   {% for portfolio in porfolios.all %}
-  <div class="card" style="width: 18rem;">
+  <div class="card" id="card-print" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">{{portfolio.title}}</h5>
       <h6 class="card-subtitle mb-2 text-muted">title</h6>

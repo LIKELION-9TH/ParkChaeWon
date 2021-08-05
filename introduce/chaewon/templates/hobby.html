@@ -4,260 +4,281 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Oswald:wght@600&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <style>
-        
-        header{ 
-            text-align: center;
-            width:auto;
-            height:100px;
-            background-color: white;
-            font-family: 'Roboto', sans-serif;
-            margin-top:20px;
-        }
-       a{
-           text-decoration-line : none !important;
-           color:black;
-        }
-        a:hover{
-            color:gray;
-        }
-        a:active{
-            border:rgb(130, 194, 130);
-            background-color:rgb(130, 194, 130);
-            color:white;
-        }
-       
-        .hobby_btn{
-          background-color:white;
-          border:0.5px solid #6988EC;
-          border-radius: 6px;
-          padding:6px;
-          
-        }
-      
-        div.row{
-                height:500px;
-                margin-left: 60px;
-                margin-right: 60px;
-                
-            }
-        div.col-lg-4{
-            float:left;
-            margin:0 auto;  
-            
-        }
-        .col-lg-4 img{
-            
-            width:160px;
-            height:160px;
-            border-radius: 50%;
-            display: block; 
-            margin: 0 auto;
-            padding-bottom: 10px;
-        }
-        .cols-lg-4>p>a{
-            height:200px;
-            position:fixed;
-        }
-        .col-lg-4 h2{
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&family=Oswald:wght@600&family=Roboto:ital,wght@1,500&display=swap"
+          rel="stylesheet">
+      <style>
+          a {
+              text-decoration-line: none !important;
+              color: black;
+          }
 
-        .col-lg-4 p{
-            text-align: center;
-            font-family: 'Noto Sans KR', sans-serif;
-          
-        }
-        .k{
-            height:100px;
-            margin-top:30px;
-            margin-bottom:11px;
-        }
-        p{
-            font-family: 'Noto Sans KR', sans-serif;
-        }
+          a:hover {
+              color: gray;
+          }
 
-        #hobby1{
-            display: inline;
-            overflow: hidden;
-            width:800px;
-        }
-        #hobby2{
-            display: inline;
-            overflow: hidden;
-            width:800px;
-            margin:1500px;
-        }
-        #hobby3{
-            display: inline;
-            overflow: hidden;
-            width:800px;
-            margin:1500px;
-        }
-        .left{
-            float: left;
-            padding-left:140px;
-            margin:50px;
-        }
-        .right{
-            float: left;
-            
-        }
-        .row2{
-            margin-top: 150px;
-            margin-left: 100px;
-        }
-       .r{
-           float: right;
-        }
-        .featurette-divider{
-            margin:50px;
-        }
-        .middle{
-            margin-top:80px;
-            margin-bottom:150px;
-            overflow: hidden;
+          a:active {
+              border: rgb(130, 194, 130);
+              background-color: rgb(130, 194, 130);
+              color: white;
+          }
 
-        }
-        .right-middle{
-            margin-top:80px;
-            margin-bottom:150px;
-            overflow: hidden;
-        }
-        .left-left{
-            float: right;
-            padding-left:140px;
-            margin:50px;
-        }
-        .right-right{
-            float:right;
-        }
-        img{
-            margin:3px;
-        }
-        .right2{
-            margin-top: 150px;
-            margin-right: 100px;
-        }
+          .hobby_btn {
+              background-color: white;
+              border: 0.5px solid #6988EC;
+              border-radius: 6px;
+              padding: 6px;
 
-        .right-middle>.featurette-heading{
-            float:right;
-            height: fit-content;
-            margin-right: 80px;
-            margin-bottom: 0;
-        }
+          }
+
+          div.row {
+              height: 200px;
+              margin-left: 60px;
+              margin-right: 60px;
+
+          }
+
+          div.col-lg-4 {
+              float: left;
+              margin: 0 auto;
+
+          }
+
+          .col-lg-4 img {
+
+              width: 160px;
+              height: 160px;
+              border-radius: 50%;
+              display: block;
+              margin: 0 auto;
+              padding-bottom: 10px;
+          }
+
+          .cols-lg-4>p>a {
+              height: 200px;
+              position: fixed;
+          }
+
+          .col-lg-4 h2 {
+              text-align: center;
+              font-family: 'Roboto', sans-serif;
+          }
+
+          .col-lg-4 p {
+              text-align: center;
+              font-family: 'Noto Sans KR', sans-serif;
+
+          }
+
+          .k {
+              height: 100px;
+              margin-top: 30px;
+              margin-bottom: 11px;
+          }
+
+          p {
+              font-family: 'Noto Sans KR', sans-serif;
+          }
+
+          #hobby1 {
+              display: inline;
+              overflow: hidden;
+              width: 800px;
+              margin: 1500px;
+          }
+
+          #hobby2 {
+              display: inline;
+              overflow: hidden;
+              width: 800px;
+              margin: 1500px;
+          }
+
+          #hobby3 {
+              display: inline;
+              overflow: hidden;
+              width: 800px;
+              margin: 1500px;
+          }
+
+          .left {
+              float: left;
+              padding-left: 140px;
+              margin: 50px;
+          }
+
+          .right {
+              float: left;
+
+          }
+
+          .row2 {
+              margin-top: 150px;
+              margin-left: 100px;
+          }
+
+          .r {
+              float: right;
+          }
+
+          .featurette-divider {
+              margin: 50px;
+          }
+
+          .middle {
+              margin-top: 80px;
+              margin-bottom: 150px;
+              overflow: hidden;
+
+          }
+
+          .right-middle {
+              margin-top: 80px;
+              margin-bottom: 150px;
+              overflow: hidden;
+          }
+
+          .left-left {
+              float: right;
+              padding-left: 140px;
+              margin: 50px;
+          }
+
+          .right-right {
+              float: right;
+          }
+
+          img {
+              margin: 3px;
+          }
+
+          .right2 {
+              margin-top: 150px;
+              margin-right: 100px;
+          }
+
+          .right-middle>.featurette-heading {
+              float: right;
+              height: fit-content;
+              margin-right: 80px;
+              margin-bottom: 0;
+          }
+      </style>
 
 
-    </style>
-
-     
   </head>
-<body>
-    <header>
-            <h1>Hobby</h1>
-    </header>
 
+<body>
+      <section class="py-1 text-center container">
+          <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1 class="fw-light">Hobby</h1>
+                  <p class="lead text-muted">제가 좋아하는 장소를 소개합니다</p>
+              </div>
+          </div>
+      </section>
     <main>
         <div class="container_marketing">
 
             <!-- Three columns of text below the carousel -->
             <div class="row">
-            <div class="col-lg-4">
-                <img src="{% static '여행.jpg' %}"  alt="Placeholder: 140x140">
-                <h2>travel</h2>
-                <div class="col-lg-4"></div>
-                <p class="k">여행하는 걸 좋아합니다.</p>
-                <p><a class="hobby_btn" href="#hobby1">View details &raquo;</a></p>
-            </div>
-            
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="{% static '사진.jpg' %}"  alt="Placeholder: 140x140" >
-                <h2>photo</h2>
-                <p class="k">사진찍는 걸 좋아합니다.</p>
-                <p><a class="hobby_btn" href="#hobby2">View details &raquo;</a></p>
-            </div>
+                <div class="col-lg-4">
+                    <img src="{% static '여행.jpg' %}" alt="Placeholder: 140x140">
+                    <h2>travel</h2>
+                    <div class="col-lg-4"></div>
+                    <p class="k">여행하는 걸 좋아합니다.</p>
+                    <p><a class="hobby_btn" href="#hobby1">View details &raquo;</a></p>
+                </div>
 
-            <!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img src="{% static '자전거2.jpg' %}"  alt="Placeholder: 140x140">
-                <h2>bicycle</h2>
-                <p class="k">자전거 타고 <br> 여기저기 다니는 걸 좋아합니다.</p>
-                <p><a class="hobby_btn" href="#hobby3">View details &raquo;</a></p>
-             
-            </div><!-- /.col-lg-4 -->
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static '사진.jpg' %}" alt="Placeholder: 140x140">
+                    <h2>photo</h2>
+                    <p class="k">사진찍는 걸 좋아합니다.</p>
+                    <p><a class="hobby_btn" href="#hobby2">View details &raquo;</a></p>
+                </div>
+
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="{% static '자전거2.jpg' %}" alt="Placeholder: 140x140">
+                    <h2>bicycle</h2>
+                    <p class="k">자전거 타고 <br> 여기저기 다니는 걸 좋아합니다.</p>
+                    <p><a class="hobby_btn" href="#hobby3">View details &raquo;</a></p>
+
+                </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
 
             <!-- START THE detail -->
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <hr class="featurette-divider">
             <div id="hobby1">
-                
                 <div class="middle">
-                     <h2 class="featurette-heading">&nbsp;&nbsp;&nbsp;travel <span class="text-muted">여행하기</span></h2>
-                       
+                    <h2 class="featurette-heading">&nbsp;&nbsp;&nbsp;travel <span class="text-muted">여행하기</span></h2>
+
                     <div class="left">
-                        <img src="{% static '모로코.jpg' %}"  alt="모로코" width="180" height="180" >
-                        <img src="{% static '스페인2.jpg' %}"  alt="스페인" width="180" height="180" >
+                        <img src="{% static '모로코.jpg' %}" alt="모로코" width="180" height="180">
+                        <img src="{% static '스페인2.jpg' %}" alt="스페인" width="180" height="180">
                         <br>
-                        <img src="{% static '스페인3.jpg' %}"  alt="스페인: 140x140" width="180" height="180" >
-                        <img src="{% static '강문.jpg' %}"  alt="강문해변: 140x140" width="180" height="180" >
+                        <img src="{% static '스페인3.jpg' %}" alt="스페인: 140x140" width="180" height="180">
+                        <img src="{% static '강문.jpg' %}" alt="강문해변: 140x140" width="180" height="180">
                     </div>
                     <div class="right">
-                        <p class="row2">여행 가는 걸 좋아합니다.  <br>다른 사람들과 여울려 노는 걸 좋아하고 여행 다니는 것도 <br>
-                        정말 좋아해서 코로나 직전에 한달 동안 <br>5명의 친구들과 함께 유럽여행을 다녀왔습니다.<br>
-                        유럽외에도 대만, 홍콩, 베트남 등등 다양한 나라를 여행하고 <br>새로운 경험을 하는 것을 즐깁니다!</p>
+                        <p class="row2">여행 가는 걸 좋아합니다. <br>다른 사람들과 여울려 노는 걸 좋아하고 여행 다니는 것도 <br>
+                            정말 좋아해서 코로나 직전에 한달 동안 <br>5명의 친구들과 함께 유럽여행을 다녀왔습니다.<br>
+                            유럽외에도 대만, 홍콩, 베트남 등등 다양한 나라를 여행하고 <br>새로운 경험을 하는 것을 즐깁니다!
+                        </p>
                     </div>
-                </div>   
+                </div>
             </div>
-        
+
             <hr class="featurette-divider">
             <div id="hobby2">
                 <div class="middle">
                     <h2 class="featurette-heading">&nbsp;&nbsp;&nbsp;photo <span class="text-muted">사진찍기</span></h2>
                     <div class="left">
-                        <img src="{% static '밤.jpg' %}"  alt="Placeholder: 200x160" width="180" height="180" >
-                        <img src="{% static '밤2.jpg' %}"  alt="Placeholder: 140x140"  width="180" height="180" >
+                        <img src="{% static '밤.jpg' %}" alt="Placeholder: 200x160" width="180" height="180">
+                        <img src="{% static '밤2.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
                         <br>
-                        <img src="{% static '일몰2.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
-                        <img src="{% static '애플.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
+                        <img src="{% static '일몰2.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
+                        <img src="{% static '애플.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
                     </div>
-                     <div class="right">
+                    <div class="right">
                         <p class="row2">사진 찍는 걸 좋아합니다. 필름카메라, 디지털 카메라 모두 좋아합니다.<br>
                             들고 다닐때는 무거워서 버리고 싶지만... 친구들이 좋아하는 것을 보는 것이 좋아서
                             <br> 디지털카메라나 필름 카메라로 찍는 걸 즐깁니다. <br>
                         </p>
                     </div>
-                </div> 
+                </div>
             </div>
-          
+
             <hr class="featurette-divider">
             <div id="hobby3">
                 <div class="middle">
-                   
                     <h2 class="featurette-heading">&nbsp;&nbsp;&nbsp;bicycle <span class="text-muted">자전거 타기</span></h2>
                     <div class="left">
-                        <img src="{% static '자전거1.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
-                        <img src="{% static '자전거2.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
+                        <img src="{% static '자전거1.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
+                        <img src="{% static '자전거2.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
                         <br>
-                        <img src="{% static '자전거3.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
-                        <img src="{% static '자전거4.jpg' %}"  alt="Placeholder: 140x140" width="180" height="180" >
+                        <img src="{% static '자전거3.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
+                        <img src="{% static '자전거4.jpg' %}" alt="Placeholder: 140x140" width="180" height="180">
                     </div>
-
                     <div class="right">
                         <p class="row2">자전거 타고 여기저기 다니는 걸 좋아합니다.<br>
-                             서울에서는 자전거를 따릉이 덕분에 여기저기 다니기 쉬워 좋았는데 <br>
-                           코로나 때문에 본가로 내려와서 좀 아쉽습니다...
-                        
+                            서울에서는 자전거를 따릉이 덕분에 여기저기 다니기 쉬워 좋았는데 <br>
+                            코로나 때문에 본가로 내려와서 좀 아쉽습니다...
+                        </p>
                     </div>
                 </div>
             </div>
             <hr class="featurette-divider">
-         
+
 
             <!-- /END THE FEATURETTES -->
 
